@@ -91,10 +91,6 @@ functions:
         Resource: arn:aws:dynamodb:${self:provider.region}:*:table/${self:provider.environment.TODOS_TABLE}
       - Effect: Allow
         Action:
-          - ses:VerifyEmailIdentity
-        Resource: '*'
-      - Effect: Allow
-        Action:
           - xray:PutTraceSegments
           - xray:PutTelemetryRecords
         Resource:
